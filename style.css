@@ -1,0 +1,379 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background-color: black;
+}
+
+.pass-Block input {
+    border-radius: 5px;
+    height: 30px;
+    width: 30% !important;
+    margin: 10px 0px;
+}
+
+/* .pass-Block {
+
+    height: 590px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 5px auto;
+    background-color: #000E42;
+    color: #fff;
+    padding: 5px 10px;
+
+} */
+
+.pass-Block label {
+    font-size: 16px;
+}
+
+.pass-Block button {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background-color: #011C7A;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pass-Block button:hover {
+    background-color: rgb(59, 88, 21);
+}
+
+.pass-Block button:hover img {
+    animation: spin 4s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+.box-inputs {
+    width: 100% !important;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+
+/* .box-inputs:focus {
+    border-bottom: 1px solid black;
+} */
+
+
+#passShow::-webkit-scrollbar {
+    display: none;
+}
+
+.container-block {
+    height: 40px;
+    padding: 0px 10px;
+    border-top: 2px solid #000518;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 10px;
+    margin: 4px 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+.container-block1 {
+    height: 80px;
+    padding: 0px 10px;
+    border-top: 2px solid #000518;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 10px;
+    margin: 2px 0px;
+}
+
+
+.container-block p {
+    line-height: 10px;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 20px;
+    display: inline;
+}
+
+#passShow {
+    height: 30px;
+    width: 90% !important;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    border-right: none;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    background: none;
+    margin: 10px 0px;
+    /* overflow-y: scroll; */
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    cursor: copy;
+
+}
+
+#checkbox1 {
+    height: 20px !important;
+}
+
+.eye {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    height: 32px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-left: none;
+    width: 15px;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.reset-button {
+    background-color: #011C7A !important;
+    width: 32% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: bold;
+}
+
+.reset-button:hover {
+    background-color: purple !important;
+
+}
+
+
+.warning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 15px;
+    gap: 5px;
+    width: 100%;
+
+}
+#wOrSt {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid white !important; */
+}
+
+.warning-inner {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #861414;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.warning-inner img {
+    height: 20px;
+}
+
+.warning-inner2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(5, 110, 5) !important;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.suggest {
+    background-color: rgb(192, 19, 19);
+    color: #fff;
+    border-radius: 10px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 1px;
+    cursor: help;
+    font-weight: bold;
+}
+
+.block {
+
+    background-color: #000518;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px white;
+    padding: 0px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+.header2 {
+    display: flex;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 14px;
+    animation: change 8s infinite;
+}
+
+@keyframes change {
+    0% {
+        transform: translateY(3px);
+    }
+
+    25% {
+        transform: translateY(-2px);
+
+    }
+
+    50% {
+        transform: translateY(3px);
+
+    }
+
+    75% {
+        transform: translateY(-2px);
+
+    }
+
+    100% {
+        transform: translateY(3px);
+
+    }
+
+}
+
+.image-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inner-block {
+    background-color: #000518;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    padding: 10px;
+    margin: -3px 0px 4px 0px;
+}
+
+input[type='range'] {
+    width: 100% !important;
+    margin-top: -2px;
+    accent-color: purple;
+
+}
+
+
+.check {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.btn .slider {
+    width: 50px;
+    height: 25px;
+    background-color: rgb(138, 138, 138);
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+
+.btn input[type='checkbox']:checked+.slider {
+    background: rgb(218, 39, 39);
+}
+
+.btn .slider::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+    background-color: #000518;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.btn input[type='checkbox']:checked +.slider::before {
+    transform: translateX(24px);
+}
+
+
+@media only screen and (max-width:980px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .inner-block {
+        height: 430px;
+    }
+
+    .block {
+        width: 80%;
+        /* margin: 5px auto;
+        height: 94vh;
+        padding: 18px; */
+    }
+
+    .container-block p {
+        line-height: 20px;
+    }
+
+}

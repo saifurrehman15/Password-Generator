@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="pass-Block">
+        
+        <div class="block">
+            <div class="header2">
+                <div class="image-block">
+                    <img src="password-generator-images/stfn.png" alt="" height="42" style="border-radius: 50%;">
+                    <h2>Password Generator</h2>
+                </div>
+
+            </div>
+            <div class="inner-block">
+                <div class="parent">
+                    <input id="passShow" type="text" readonly placeholder="Generate Strong Password"
+                        title="Copy Password" />
+                    <div class="eye">
+                        <img id="eye" src="password-generator-images/visibility_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" height="20">
+                    </div>
+                </div>
+                <div id="wOrSt"></div>
+                <div class="container-block1">
+                    <div class="checkboxes">
+                        <div> Password Length <span id="range"
+                                style="border-left: 1px solid grey;padding: 0px 2px;">1</span></div>
+                        <button onclick="reset()" class="reset-button">
+                            Reset
+                            <img src="password-generator-images/Undo.png" alt="">
+                        </button>
+                    </div>
+
+                    <input type="range" id="pass" value="0" onchange="change()" min="1" max="24" />
+
+
+                </div>
+                <div class="container-block">
+                    <div class="check">
+                        <p for="check1">Upper Case(A-Z)</p>
+                        <label for="check1" class="btn">
+                            <input type="checkbox" id="check1" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container-block">
+                    <div class="check">
+
+                        <p>Lower Case (a-z)</p>
+                        <label for="check2" class="btn">
+                            <input type="checkbox" id="check2">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="container-block">
+
+                    <div class="check">
+                        <p>Numbers (1-9)</p>
+                        <label for="check4" class="btn">
+                            <input type="checkbox" id="check4">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="container-block">
+
+                    <div class="check">
+                        <p>Special characters ( !@ )</p>
+
+                        <label for="check3" class="btn">
+                            <input type="checkbox" id="check3">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div style="border-bottom: 1px solid rgba(128, 128, 128, 0.226);height: 1px;margin: 6px;"></div>
+
+                <button id="generate" onclick="generate()">
+                    Generate Password
+                    <img src="password-generator-images/Undo.png" alt="">
+                </button>
+                <p style="line-height: 2px;text-align: center;font-size: 13px;font-style: italic;color: yellowgreen;">
+                    Password generator by saif</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

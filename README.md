@@ -1,1 +1,1 @@
-http://pass-generator.netlify.app
+http://pass-generatorbysaif.netlify.app

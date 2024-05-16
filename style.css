@@ -35,7 +35,7 @@ body {
     width: 100%;
     height: 30px;
     color: #fff;
-    background-color: #011C7A;
+    background-color: rgb(116, 161, 24);
     border: none;
     border-radius: 5px;
     margin: 10px 0px;
@@ -43,11 +43,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .pass-Block button:hover {
-    background-color: rgb(59, 88, 21);
+    background-color: rgba(153, 205, 50, 0.788);
 }
 
 .pass-Block button:hover img {
@@ -167,7 +168,7 @@ label {
 }
 
 .reset-button {
-    background-color: #011C7A !important;
+    background-color: rgb(116, 161, 24) !important;
     width: 32% !important;
     display: flex;
     align-items: center;
@@ -177,7 +178,7 @@ label {
 }
 
 .reset-button:hover {
-    background-color: purple !important;
+    background-color: rgba(166, 230, 40, 0.877) !important;
 
 }
 
@@ -204,7 +205,7 @@ label {
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: #861414;
+    /* background-color: #861414; */
     color: #fff;
     padding: 2px 8px;
     border-radius: 4px;
@@ -219,7 +220,7 @@ label {
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: rgb(5, 110, 5) !important;
+    /* background-color: rgb(5, 110, 5) !important; */
     color: #fff;
     padding: 2px 8px;
     border-radius: 4px;
@@ -309,7 +310,7 @@ label {
 input[type='range'] {
     width: 100% !important;
     margin-top: -2px;
-    accent-color: purple;
+    accent-color: rgb(116, 161, 24);
 
 }
 
@@ -336,7 +337,7 @@ input[type='checkbox'] {
 }
 
 .btn input[type='checkbox']:checked+.slider {
-    background: rgb(218, 39, 39);
+    background: rgb(116, 161, 24);
 }
 
 .btn .slider::before {

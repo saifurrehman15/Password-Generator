@@ -47,15 +47,10 @@ function generate() {
     }
 
     document.getElementById('passShow').value = pass;//Show Password
-
-    if (!userInpmy.checked && !userInpmy2.checked && !userInpmy3.checked && !userInpmy4.checked) {
-        document.getElementById('passShow').value = " ";
-    }
-
     let regex = /[!@#$%^&*()_+{}|:"<>?`\-=[\];',./]/;
     let img = "<image src='password-generator-images/Circle_Warning.png' />"
 
-    if (regex.test(pass) && pass.length > 7) {
+    if (userInpmy4.checked && pass.length >= 10 && userInpmy.checked && userInpmy2.checked && userInpmy4.checked) {
 
         document.getElementById('wOrSt').innerHTML = "<div class='warning'><div class='warning-inner2'>" + img + "Strength:Strong </div></div>";
 
@@ -64,6 +59,13 @@ function generate() {
         document.getElementById('wOrSt').innerHTML = "<div class='warning'><div class='warning-inner'>" + img + "Strength:Weak </div><div class='suggest' onclick='showDialog()' title='Help' id='st'>?</div></div>";
 
     }
+
+    if (!userInpmy.checked && !userInpmy2.checked && !userInpmy3.checked && !userInpmy4.checked) {
+        document.getElementById('passShow').value = "Select Atleast One Format";
+
+        document.getElementById('wOrSt').innerHTML = " ";
+    }
+
     return pass;
 };
 
